@@ -13,6 +13,8 @@
 		8F8F55B41DE5D4E000B64B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8F55B31DE5D4E000B64B25 /* Assets.xcassets */; };
 		8F8F55B71DE5D4E000B64B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8F55B51DE5D4E000B64B25 /* LaunchScreen.storyboard */; };
 		8F8F55C21DE5DAA200B64B25 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F55C11DE5DAA200B64B25 /* VideoVC.swift */; };
+		8FFDC4DD1DE60C7F008684AB /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFDC4DC1DE60C7F008684AB /* VideoCell.swift */; };
+		8FFDC4DF1DE60E2A008684AB /* VideoCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFDC4DE1DE60E2A008684AB /* VideoCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8F8F55B61DE5D4E000B64B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8F55B81DE5D4E000B64B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F8F55C11DE5DAA200B64B25 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		8FFDC4DC1DE60C7F008684AB /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		8FFDC4DE1DE60E2A008684AB /* VideoCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		8F8F55BE1DE5D6DE00B64B25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8FFDC4DE1DE60E2A008684AB /* VideoCellData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 		8F8F55BF1DE5D6E700B64B25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8FFDC4DC1DE60C7F008684AB /* VideoCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			files = (
 				8F8F55C21DE5DAA200B64B25 /* VideoVC.swift in Sources */,
 				8F8F55AF1DE5D4E000B64B25 /* HomeVC.swift in Sources */,
+				8FFDC4DD1DE60C7F008684AB /* VideoCell.swift in Sources */,
+				8FFDC4DF1DE60E2A008684AB /* VideoCellData.swift in Sources */,
 				8F8F55AD1DE5D4E000B64B25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +338,7 @@
 				8F8F55BD1DE5D4E000B64B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

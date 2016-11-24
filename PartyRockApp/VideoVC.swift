@@ -9,22 +9,26 @@
 import UIKit
 
 class VideoVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+  @IBOutlet weak var webView: UIWebView!
+  
+  private var _videoCellData: VideoCellData!
+  @IBOutlet weak var titleLabel: UILabel!
+  
+  var videoCellData: VideoCellData{
+    get{
+      return _videoCellData
     }
+    set{
+      _videoCellData = newValue
+    }
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    titleLabel.text = videoCellData.videoTitle
+    webView.loadHTMLString(videoCellData.videoURL, baseURL: nil)
+  }
+  
 }
